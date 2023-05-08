@@ -1,0 +1,117 @@
+body {
+	background-color: #f1f1f1;
+	font-family: Arial, sans-serif;
+}
+
+.light-mode {
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+.dark-mode {
+	background-color: #333;
+	color: #f1f1f1;
+}
+
+.title{
+    font-size: 50px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.time {
+	background-color: #333;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.message {
+	display: none;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	color: #333;
+}
+
+.toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.toggle-label {
+	background-color: #ccc;
+	border-radius: 999px;
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	position: relative;
+	width: 60px;
+}
+
+.toggle-input {
+	display: none;
+}
+
+.toggle-label:before {
+	background-color: #fff;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height: 22px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	transition: all 0.2s ease-in-out;
+	width: 22px;
+}
+
+.toggle-input:checked + .toggle-label:before {
+	transform: translateX(30px);
+}
+
+.toggle-label:active:before {
+	width: 28px;
+}
+
+.dark-mode .countdown {
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.dark-mode .time {
+	background-color: #f1f1f1;
+	color: #333;
+	font-size: 50px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.dark-mode .message {
+	display: none;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+}
